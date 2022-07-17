@@ -1,0 +1,122 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+}
+
+h1 {
+    margin: 0;
+    font-family: Fraunces;
+}
+
+
+p {
+    font-family: Montserrat;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+.container {
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.inner-container {
+    display: flex;
+    width: 95%;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 0.7em;
+}
+
+.desktop-product-image {
+    border-bottom-left-radius: 0.7em;
+    border-top-left-radius: 0.7em;
+    background-image: url(img/image-product-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-content {
+    padding: 2em;
+}
+
+.desktop-product-image,
+.product-content {
+    width: 50%;
+}
+
+.mobile-product-image {
+    display: none;
+}
+
+.product-name {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0 0 0.5em 0;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.price-current,
+.price-replaced {
+    margin: 0;
+}
+
+.price-current {
+    font-size: 2.3rem;
+    font-family: Fraunces;
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);
+}
+
+.price-replaced {
+    text-decoration: line-through;
+}
+
+.add-to-cart-btn {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 0.7em;
+    width: 100%;
+    padding: 1.5em 0;
+    color: white;
+    margin-top: 1em;
+}
+
+.add-to-cart-icon {
+    padding-right: 0.5em;
+}
+
+@media (max-width: 375px) {
+    .container {
+        padding: 5em 0;
+    }
+    .inner-container {
+        flex-direction: column;
+    }
+    .mobile-product-image {
+        display: block;
+    }
+    .product-content {
+        width: 100%;
+        padding: 1.5em;
+    }
+}
