@@ -116,6 +116,8 @@ p {
     }
     .mobile-product-image {
         display: block;
+        border-top-left-radius: 0.7em;
+        border-top-right-radius: 0.7em;
     }
     .product-content {
         width: 100%;
